@@ -60,6 +60,7 @@ class Admin(commands.Cog):
         embed.set_thumbnail(url='https://i.pinimg.com/originals/10/4d/5f/104d5fcdae0f8fbbeb574d46425cd006.jpg')
         embed.add_field(name='PROD:', value=f"[xaynaver#7499]({owner_url})", inline=False)
         embed.add_field(name='DEV:', value=f"[ꜱᴛᴀᴄɪᴀ.#7475](https://discord.com/users/240059262297047041)", inline=False)
+        embed.add_field(
             name='ᴄᴏɴᴛʀɪʙᴜᴛᴏʀꜱ:',
             value=f"[kiznick](https://github.com/kiznick)\n"
             "[KANATAISGOD](https://github.com/KANATAISGOD)\n"
