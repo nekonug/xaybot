@@ -51,15 +51,15 @@ class Admin(commands.Cog):
     async def about(self, interaction: Interaction) -> None:
         """Shows basic information about the bot."""
 
-        owner_url = f'https://discord.com/users/240059262297047041'
-        github_project = 'https://github.com/staciax/Valorant-DiscordBot'
-        support_url = 'https://discord.gg/FJSXPqQZgz'
+        owner_url = f'https://discord.com/users/231680517538316289'
+        github_project = 'https://github.com/xaynaver/Valorant-DiscordBot'
+        support_url = 'https://discord.com/users/231680517538316289'
 
         embed = discord.Embed(color=0xFFFFFF)
         embed.set_author(name='VALORANT BOT PROJECT', url=github_project)
-        embed.set_thumbnail(url='https://i.imgur.com/ZtuNW0Z.png')
-        embed.add_field(name='DEV:', value=f"[ꜱᴛᴀᴄɪᴀ.#7475]({owner_url})", inline=False)
-        embed.add_field(
+        embed.set_thumbnail(url='https://i.pinimg.com/originals/10/4d/5f/104d5fcdae0f8fbbeb574d46425cd006.jpg')
+        embed.add_field(name='PROD:', value=f"[xaynaver#7499]({owner_url})", inline=False)
+        embed.add_field(name='DEV:', value=f"[ꜱᴛᴀᴄɪᴀ.#7475](https://discord.com/users/240059262297047041)", inline=False)
             name='ᴄᴏɴᴛʀɪʙᴜᴛᴏʀꜱ:',
             value=f"[kiznick](https://github.com/kiznick)\n"
             "[KANATAISGOD](https://github.com/KANATAISGOD)\n"
@@ -74,8 +74,8 @@ class Admin(commands.Cog):
         )
         view = ui.View()
         view.add_item(ui.Button(label='GITHUB', url=github_project, row=0))
-        view.add_item(ui.Button(label='KO-FI', url='https://ko-fi.com/staciax', row=0))
-        view.add_item(ui.Button(label='SUPPORT SERVER', url=support_url, row=0))
+        view.add_item(ui.Button(label='ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/xaynaver', row=0))
+        view.add_item(ui.Button(label='SUPPORT', url=support_url, row=0))
 
         await interaction.response.send_message(embed=embed, view=view)
 
